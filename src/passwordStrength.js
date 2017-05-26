@@ -20,6 +20,7 @@ const passwordStrength = function(options = {}) {
             untestedMsg: 'untested',
             passingMsg: 'passing',
             failingMsg: 'failing',
+            logErrors: false,
             onUntestedCallback: null,
             onFailingCallback: null,
             onPassingCallback: null,
@@ -160,7 +161,9 @@ const passwordStrength = function(options = {}) {
     };
 
     function logError(msg, method = 'log') {
-        console[method](errors.prefix + msg);
+        if (settings.logErrors === true) {
+            console[method](errors.prefix + msg);
+        }
     };
 
     function fireCallback(callback, msg) {
