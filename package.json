@@ -1,0 +1,30 @@
+{
+    "name": "passwordStrength",
+    "version": "1.0.0",
+    "description": "A plugin for testing and displaying the strength of a password.",
+    "keywords": [
+    	"password",
+    	"strength",
+        "form",
+        "DEGJS"
+    ],
+    "author": {
+        "name": "Aaron Ladage",
+        "email": "aladage@degdigital.com",
+        "url": "http://aaronladage.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DEGJS/passwordStrength.git"
+    },
+    "bugs": "https://github.com/DEGJS/passwordStrength/issues",
+    "jspm": {
+        "registry": "jspm",
+        "format": "es6",
+        "main": "passwordStrength.js",
+        "directories": {
+            "lib": "src"
+        }
+    }
+}

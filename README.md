@@ -1,2 +1,2 @@
 # passwordStrength
-A module for testing and displaying the strength of a password.
+passwordStrength is a plugin for testing and displaying the strength of a password.
