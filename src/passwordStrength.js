@@ -1,3 +1,4 @@
+/* */ 
 const passwordStrength = function(options = {}) {
 
     const errors = {
@@ -76,10 +77,10 @@ const passwordStrength = function(options = {}) {
     function onInputEvent(e) {
         test(e.target.value)
             .then(function(response) {
-                fireCallback(settings.onSuccessCallback, response);
+                fireCallback(settings.onPassingCallback, response);
             })
             .catch(function(error) {
-                fireCallback(settings.onFailCallback, error);
+                fireCallback(settings.onFailingCallback, error);
             });
     };
 
